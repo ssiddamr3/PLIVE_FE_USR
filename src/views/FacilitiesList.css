@@ -1,0 +1,74 @@
+.event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    padding-bottom: 2vh !important;
+    background-color: rgba(217, 217, 217, 0);
+    text-align: center;
+}
+
+.fac-lis-tit {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.facility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.facility-item {
+    flex: 0 1 calc(33.333% - 40px); /* Three items per row */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.facility-item:hover {
+    transform: scale(1.05);
+}
+
+.facility-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.facility-message {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #333;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.update-submit {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black;
+    color: #80FF44;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-submit:hover {
+    background-color: #0056b3;
+}
+.facility-image{
+    height: 40vh;
+}

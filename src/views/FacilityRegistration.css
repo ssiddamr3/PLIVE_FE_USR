@@ -1,0 +1,79 @@
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 0.5em 0 #80FF44, 0 0 0.5em 0 #80FF44;
+    z-index: 1000;
+    width: 50vw;
+    height: 60vh;
+    border: 0.5px solid #80FF44;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #80FF44;;
+    font-size: 1.8em;
+  }
+  
+  .future-register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #ddd;
+  }
+  
+  .facility-select,
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgba(217, 217, 217, 0);
+    color: white;
+  }
+  
+  .facility-select:focus,
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: hsl(317, 100%, 54%);
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .register-submit {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: rgba(217, 217, 217, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-submit:hover {
+    background-color: rgba(217, 217, 217, 0);
+  }
+  

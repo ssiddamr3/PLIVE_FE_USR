@@ -1,0 +1,85 @@
+.product-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .product-image {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialog {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #80FF44; /* Border color for inputs */
+    color: white;
+}
+.sell-option{
+    color: #80FF44;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    cursor: pointer;
+}
+.dia-price{
+    padding-top: 30px;
+}
+  .dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  
+  .close-button {
+    padding: 10px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #ff1a1a;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  }
+  
+  .buy-now-button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  }
+  
+  .buy-now-button:hover {
+    background-color: #218838;
+  }

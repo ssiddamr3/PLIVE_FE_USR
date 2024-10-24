@@ -1,0 +1,43 @@
+.toggle-switch {
+    display: inline-block;
+    width: 30px;  /* Width of the toggle */
+    height: 17px; /* Height of the toggle */
+    position: relative;
+    margin-bottom: 9px;
+  }
+  
+  .toggle-switch-checkbox {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .toggle-switch-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    background-color: lightgray; /* Background color when off */
+    border-radius: 17px; /* Adjusted border radius */
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  
+  .toggle-switch-label::before {
+    content: '';
+    position: absolute;
+    top: 2px; /* Adjusted position for the switch (centered vertically) */
+    left: 2px; /* Adjusted position for the switch (centered horizontally) */
+    width: 13px; /* Adjusted width of the switch */
+    height: 13px; /* Adjusted height of the switch */
+    background: white; /* Background color of the switch */
+    border-radius: 50%; /* Make it round */
+    transition: transform 0.2s; /* Smooth slide transition */
+  }
+  
+  .toggle-switch-checkbox:checked + .toggle-switch-label {
+    background-color: #4caf50; /* Change background when toggled on */
+  }
+  
+  .toggle-switch-checkbox:checked + .toggle-switch-label::before {
+    transform: translateX(13px); /* Distance to slide when toggled */
+  }
+  

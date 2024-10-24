@@ -1,0 +1,318 @@
+/* General styles for the calendar container */
+.calendar {
+    display: flex;
+    justify-content: center; /* Center the calendar horizontally */
+    align-items: center; /* Center the calendar vertically */
+    margin-bottom: 20px; /* Add some spacing below the calendar */
+    background-color: rgba(217, 217, 217, 0); /* Background color of the calendar container */
+    padding: 20px; /* Add padding around the calendar */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-left: 4vh;
+    width: 70vh;
+}
+
+/* Hover effect for each calendar day tile */
+.react-calendar__tile {
+    transition: background-color 0.3s ease !important;
+    border: 1px solid transparent;
+    color: white; /* Set the font color for day numbers */
+}
+
+.react-calendar__tile:hover {
+    background-color: rgba(217, 217, 217, 0) !important; /* Highlight color on hover */
+    color: #80FF44 !important;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    border-radius: 4px;
+    border: 0.3px solid #80FF44 !important;
+}
+
+/* Highlight color for the selected date */
+.react-calendar__tile--active {
+    background-color: transparent !important;
+    border-radius: 10%;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    color: white !important;
+    box-shadow: inset 0 0 0.5em 0 #80FF44, 0 0 0.5em 0 #80FF44;
+}
+
+/* Calendar specific styles */
+.calendar .react-calendar {
+    width: 350px;
+    background-color: inherit;
+    border: 0.3px solid #80FF44 !important;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+/* Navigation button styles */
+.react-calendar__navigation button:disabled {
+    background-color: #e0e0e0;
+    color: #b0b0b0;
+}
+
+.react-calendar__navigation {
+    background-color: inherit; /* Inherit background color for the navigation */
+}
+
+.react-calendar__navigation__label {
+    font-size: 1.2em; /* Font size for month and year labels */
+    font-weight: bold; /* Bold text */
+    color: #80FF44 ; /* Color for month and year labels */
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.react-calendar__navigation button:hover {
+    background-color: rgba(217, 217, 217, 0) !important;
+    border-radius: 10%;
+    border: 0.3px solid #80FF44 !important;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+.react-calendar__navigation button:active {
+    background-color: rgba(217, 217, 217, 0) !important; /* Background color when active */
+    color: #80FF44 !important; /* Arrow color when active */
+    border: 0.3px solid #80FF44 !important;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+.react-calendar__navigation button {
+    background-color: rgba(217, 217, 217, 0) !important; /* Default background color */
+    color: #80FF44 !important; /* Arrow color */
+    border-radius: 10%;
+    border: 0.3px solid #80FF44 !important;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    font-size: 1.2em; /* Adjust size of arrows if needed */
+}
+
+/* Weekday labels */
+.react-calendar__month-view__weekdays__weekday {
+    color: #80FF44 !important;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    font-weight: bold;
+}
+
+.react-calendar__tile--now {
+    background-color: transparent !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Styles for the event form container */
+.event-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(217, 217, 217, 0);
+    border: 2px solid white; /* Add border to the form */
+    border-radius: 8px; /* Smooth border radius for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use Flexbox to center content */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 90vh; /* Adjust width as needed */
+    /* max-width: 500px; Optional: set a maximum width */
+    margin: 20px auto; /* Center the container horizontally */
+    
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%; /* Use full width of the container */
+    background-color: rgba(217, 217, 217, 0);
+    color: #e0e0e0;
+    font-family: Poppins; ;
+    font-size: larger;
+    /* margin-left: 20vh; */
+    /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+}
+/* Styles for form labels */
+.event-form label {
+    margin-bottom: 10px;
+    color:#e0e0e0 ;
+}
+
+/* Styles for form inputs */
+.event-form input {
+    padding: 8px;
+    border: 1px solid #80FF44; /* Border color for inputs */
+    border-radius: 5px; /* Smooth border radius for inputs */
+    margin-bottom: 10px;
+    width: 100%; /* Make input fields take full width of the form */
+}
+
+/* Styles for form buttons */
+.event-form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #80FF44;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Make buttons take full width of the form */
+}
+
+.event-form button:hover {
+    background-color: #6cd634;
+}
+
+.event-form button:focus {
+    outline: none;
+}
+.img-evnt{
+    width: 40vh;
+    border-radius: 1%;
+}
+
+.name-formm {
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin: 20px 0; /* Margin to separate from other elements */
+    margin-bottom: 20px;
+    border-color: aqua;
+  }
+  
+  .name-label {
+    display: block; /* Makes label take up full width */
+    font-weight: bold; /* Makes label text bold */
+    margin-bottom: 10px; /* Space between label and input box */
+  }
+  
+  .name-inputs {
+    display: flex; /* Use flexbox for layout */
+    gap: 15px; /* Space between first and last name input */
+  }
+  
+  .input-box {
+    width: 100%; /* Makes input fill available space */
+    padding: 8px; /* Padding inside input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+  .event-form-container {
+    padding: 20px;
+  }
+  
+  .event-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-form {
+    display: flex;
+    justify-content: space-between; /* Aligns first name and last name */
+  }
+  
+  .attendees-team {
+    display: flex;
+    justify-content: space-between; /* Aligns number of attendees and team name */
+    margin: 10px 0; /* Adds some spacing between rows */
+  }
+  
+  .email-toggle {
+    display: flex;
+    justify-content: space-between; /* Aligns email input and toggle switch */
+    align-items: center; /* Centers items vertically */
+    margin: 10px 0;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Centers the toggle and label */
+  }
+  
+  .event-location {
+    display: flex;
+    justify-content: space-between; /* Aligns calendar info and map */
+    margin: 20px 0; /* Adds spacing */
+  }
+  
+  .calendar-info {
+    display: flex;
+    align-items: center; /* Aligns icon and text */
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between; /* Aligns close and register buttons */
+    margin-top: 20px; /* Adds spacing above buttons */
+  }
+
+  .input-box {
+    padding: 10px; /* Add some padding for better aesthetics */
+    border: 1px solid #ccc; /* Default border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .input-box:focus {
+    /* background-color: #f0f8ff; Light blue background when focused */
+    outline: none; /* Remove default outline */
+    border-color:#80FF44!important; /* Change border color when focused */
+  }
+
+  .cal-icon{
+    height: 56px;
+    margin-right: 20px;
+  }
+
+  .event-form-container {
+    position: relative;
+  }
+  
+  .event-form {
+    /* background-color: #fff; Adjust as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .success-message {
+    margin-left: 20vh;
+  }
+  
+  .success-message span {
+    display: inline-block;
+    font-size: 30px; /* Adjust size for the tick */
+    animation: tickAnimation 1s forwards; /* Animation for the tick */
+  }
+  
+  @keyframes tickAnimation {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .lottie-animation-submitted{
+    margin-left: 20vh !important;
+  }
+
+  .close-btn{
+    background-color: #B22222 !important;
+  }
+
+  .register-btn{
+    background-color: #3CB371 !important;
+    /* fontcolor: black !important; */
+  }
